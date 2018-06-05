@@ -1,5 +1,5 @@
 var chai = require('chai');
-var Matilde = require('./Matilde/Matilde');
+var Matilde = require('./Matilde/matilde');
 var assert = chai.assert;
 
 var testData1 = [
