@@ -66,11 +66,18 @@ var inputData = [
         ]
     ]
 ]
+// instantiate
+var stuff = new Matilde();
+// then manually init
+stuff.init(inputData);
+
+// or instantiate and init in one
 var stuff = new Matilde(inputData);
 
+// output
 stuff.toString();
 
-// output
+// outputs
 "FBV~IDCompany~EQ~1~FOP~0~(~0~FBVOR~IDRole~EQ~4~FBVOR~FirstName~LK~one%25~FOP~0~(~0~FBL~LastName~INN~one,two~FCP~0~)~0~FCP~0~)~0~FSF~IDRole~ASC~0~FSF~FirstName~DESC~0"
 ```
 

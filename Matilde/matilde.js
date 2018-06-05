@@ -1,8 +1,17 @@
-function Matilde (inputValues) {
-    this._input = inputValues;
-    this.chunks = [];
-    this.sortChunks = [];
-    this.tree = {};
+function Matilde (inputData) {
+
+    this.reset = function () {
+        this._input = null;
+        this.chunks = [];
+        this.sortChunks = [];
+        this.tree = {};
+    };
+    this.init = function (inputValues) {
+        this.reset();
+        this._input = inputValues;
+        this.map(this._input, this.tree);
+        return this;
+    };
     this.map = function (value, FOP) {
         var me = this;
         return Array.prototype.map.call(value, function (item) {
@@ -60,9 +69,9 @@ function Matilde (inputValues) {
             }
         });
     };
+    if (inputData) {
+        this.init(inputData);
 
-    if (this._input) {
-        this.map(this._input, this.tree);
     }
     return this;
 }
@@ -75,5 +84,4 @@ Matilde.prototype.toString = function () {
         throw new Error('no input');
     }
 };
-
 module.exports = Matilde;
