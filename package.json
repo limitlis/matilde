@@ -1,0 +1,29 @@
+{
+  "name": "matilde",
+  "version": "1.0.0",
+  "description": "A tiny library that converts JSON object into url-friendly queries",
+  "main": "Matilde/matilde.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://limitlis@github.com/limitlis/matilde.git"
+  },
+  "keywords": [
+    "matilde",
+    "tilde",
+    "meadow",
+    "endpoints"
+  ],
+  "author": "Cesar Vargas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limitlis/matilde/issues"
+  },
+  "homepage": "https://github.com/limitlis/matilde#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}

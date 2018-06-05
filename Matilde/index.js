@@ -1,0 +1,1 @@
+window.hlClientFilter = require('./headlightClientFilter');
