@@ -2,7 +2,7 @@
   "name": "matilde",
   "version": "1.1.0",
   "description": "A tiny library that converts JSON object into url-friendly queries",
-  "main": "Matilde/matilde.js",
+  "main": "dist/matilde.js",
   "scripts": {
     "test": "mocha",
     "build": "browserify ./Matilde/index.js -o dist/matilde.js"
