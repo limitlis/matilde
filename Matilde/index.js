@@ -1,1 +1,1 @@
-window.hlClientFilter = require('./headlightClientFilter');
+window.matilde = require('./matilde');
