@@ -4,7 +4,8 @@
   "description": "A tiny library that converts JSON object into url-friendly queries",
   "main": "Matilde/matilde.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "build": "browserify ./Matilde/index.js -o dist/matilde.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/limitlis/matilde#readme",
   "devDependencies": {
+    "browserify": "^16.5.0",
     "chai": "^4.1.1",
     "mocha": "^3.5.0"
   }
