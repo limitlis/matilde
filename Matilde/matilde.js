@@ -36,7 +36,7 @@ function Matilde (inputData) {
                     filterType = 'FBV';
                     // Handle wildcards for LK qualifier
                     if (item.qualifier === 'LK') {
-                        item.value += encodeURIComponent('%');
+                        item.value = encodeURIComponent('%') + item.value + encodeURIComponent('%');
                         // if FBL/INN can use wildcards handle that here too
                     }
                 }
